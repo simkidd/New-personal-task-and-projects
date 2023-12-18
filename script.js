@@ -21,16 +21,30 @@ function addTask (){
   storeData()
 }
 
-listWrapper.addEventListener("click", function(e){
-  if(e.target.tagName === 'LI'){
+// listWrapper.addEventListener("click", function(e){
+//   if(e.target.tagName === 'LI'){
+//     e.target.classList.toggle("checked");
+//     storeData()
+//   }
+//   else if(e.target.tagName === "SPAN"){
+//     e.target.parentElement.remove();
+//     storeData()
+//   } 
+// }, false);
+
+listWrapper.addEventListener("click", function (e) {
+  if (e.target.tagName === "LI") {
     e.target.classList.toggle("checked");
-    storeData()
-  }
-  else if(e.target.tagName === "SPAN"){
-    e.target.parentElement.remove();
-    storeData()
-  } 
-}, false);
+    storeData();
+  } else if (e.target.tagName === "SPAN" || e.target.parentElement.tagName === "SPAN") {
+    e.target.closest("li").remove();
+    storeData();
+  }
+}, false);
+
+
+
+
 function storeData(){
   localStorage.setItem("data", listWrapper.innerHTML);
 }
