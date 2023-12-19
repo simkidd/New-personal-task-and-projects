@@ -17,4 +17,25 @@ navLinks.addEventListener("click", (e) =>{
   menuBtnIcon.setAttribute("class", "fa fa-bars")
 });
 
+const scrollRevealOption = {
+distance: "50px",
+origin: "bottom",
+duration: 1000,
+};
+
+//this is header container
+
+scrollReveal().reveal(".header-content h1",{
+  ...scrollRevealOption,
+});
+
+scrollReveal().reveal(".header-content .section-description",{
+  ...scrollRevealOption,
+  delay: 500
+});
+
+scrollReveal().reveal(".header-content .header-btn",{
+  ...scrollRevealOption,
+  delay: 1000,
+});
 
