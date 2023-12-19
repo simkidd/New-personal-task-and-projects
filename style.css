@@ -166,6 +166,32 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
 }
 
+.sect-about{
+  background-color: var(--extra-light);
+}
+
+.section-container{
+  display: grid;
+  gap: 2rem;
+  text-align: center;
+
+}
+
+.about-img img{
+max-width: 550px;
+margin: auto;
+box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+
+
+
+
+
+
 
 
 
