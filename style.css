@@ -17,25 +17,26 @@
   --max-width: 1200px;
 }
 
-/* .section-container{
+.section-container{
   max-width: var(--max-width);
   margin: auto;
   padding: 5rem 1rem;
-} */
+}
 
-/* .section-header{
-  margin-bottom: 1rem;
-  font-size: 2.5rem;
-  font-weight: 500;
+.section-header{
+  /* margin-bottom: 1rem; */
+  /* font-size: 2.5rem; */
+  /* font-weight: 500; */
+  /* background-color: red; */
   color: var(--text-dark );
-} */
+}
 
-/* .section-description{
+.section-description{
   margin-bottom: 2rem;
   color: var(--text-light);
-} */
+}
 
-/* .btn{
+.btn{
   padding: .75rem 2rem;
   font-size: 1rem;
   color: var(--white);
@@ -45,17 +46,17 @@
   cursor: pointer;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
   transition: 0.3s;
-} */
+}
 
-/* .btn:hover{
+.btn:hover{
   background: var(--primary-color-darkshade);
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-} */
-
-/* img{
+  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.2);
+}
+ 
+img{
   width: 100%;
   display: flex;
-} */
+} 
 
 a{
   text-decoration: none;
@@ -125,6 +126,49 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   color: var(--primary-color);
 }
 
+.header-container{
+  padding: 8rem;
+  display: grid;
+  gap: 2rem ;
+  text-align: center;
+}
+
+.header-content h1{
+  margin-bottom: 1rem;
+  font-size: 2rem ;
+  font-weight: 500;
+  color: var(--text-dark);
+  line-height: 2.5rem;
+}
+
+.header-content h1 span{
+  font-size: 6rem;
+  line-height: 6rem;
+}
+
+.header-img img{
+  filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, .2));
+  -webkit-filter: drop-shadow (10px 20px rgba(0, 0, 0.2));
+  animation: header 5s infinite;
+  /* width: 50%; */
+  /* height: 100%; */
+}
+
+@keyframes header{
+  0%, 100%{
+    transform: translateY(0);
+  }
+
+  25%{
+    transform: translateY(-20px);
+  }
+  75%{
+    transform: translateY(26px);
+  }
+}
+
+
+
 
 @media (width > 768px){
   .nav{
@@ -156,5 +200,17 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
 .navLinks a{
   color: var(--text-dark);
+}
+
+
+.header-container{
+  padding-top: 5rem;
+  align-items: center;
+  grid-template-columns: repeat(2fr, 1fr);
+  text-align: left;
+}
+
+.header-img{
+  grid-area: 1/2/2/3;
 }
 }
