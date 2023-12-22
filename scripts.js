@@ -25,16 +25,16 @@ duration: 1000,
 
 //this is header container
 
-scrollReveal().reveal(".header-content h1",{
+ScrollReveal().reveal(".header-content h1",{
   ...scrollRevealOption,
 });
 
-scrollReveal().reveal(".header-content .section-description",{
+ScrollReveal().reveal(".header-content .section-description",{
   ...scrollRevealOption,
-  delay: 500
+  delay: 500,
 });
 
-scrollReveal().reveal(".header-content .header-btn",{
+ScrollReveal().reveal(".header-content .header-btn",{
   ...scrollRevealOption,
   delay: 1000,
 });
@@ -42,19 +42,27 @@ scrollReveal().reveal(".header-content .header-btn",{
 
 // about conatiner
 
-scrollReveal().reveal(".about-content .section-header",{
+ScrollReveal().reveal(".about-content .section-header",{
   ...scrollRevealOption,
 });
 
-scrollReveal().reveal(".about-content .section-description",{
+ScrollReveal().reveal(".about-content .section-description",{
   ...scrollRevealOption,
-  delay: 500
+  delay: 500,
 });
 
-scrollReveal().reveal(".about-content .about-btn",{
+ScrollReveal().reveal(".about-content .about-btn",{
   ...scrollRevealOption,
   delay: 1000,
 });
+
+//product container
+
+ScrollReveal().reveal(".products-card",{
+  ...scrollRevealOption,
+  interval: 500,
+});
+
 
 
 
