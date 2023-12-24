@@ -64,6 +64,13 @@ ScrollReveal().reveal(".products-card",{
 });
 
 
+//article container
+
+ScrollReveal().reveal(".article-card",{
+  ...scrollRevealOption,
+  interval: 500,
+});
+
 
 
 
